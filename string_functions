@@ -1,0 +1,54 @@
+public class StringHandlingExample {
+    public static void main(String[] args) {
+        // Sample input string
+        String inputString = "Java String Handling Example";
+
+        // 1. String Length
+        int length = inputString.length();
+        System.out.println("1. String Length: " + length);
+
+        // 2. Concatenation
+        String newString = inputString.concat(" in Java");
+        System.out.println("2. Concatenation: " + newString);
+
+        // 3. Substring
+        String subString = inputString.substring(5, 12); // Extract "String"
+        System.out.println("3. Substring: " + subString);
+
+        // 4. Character at a specific index
+        char charAtIndex = inputString.charAt(8); // Get the character at index 8 (S)
+        System.out.println("4. Character at Index 8: " + charAtIndex);
+
+        // 5. String Comparison
+        String compareString = "Java String Handling Example";
+        boolean isEqual = inputString.equals(compareString); // Compare strings for equality
+        System.out.println("5. String Comparison: " + isEqual);
+
+        // 6. String Search
+        boolean containsExample = inputString.contains("Example"); // Check if it contains "Example"
+        System.out.println("6. Contains 'Example': " + containsExample);
+
+        // 7. Index of Substring
+        int indexOfHandling = inputString.indexOf("Handling"); // Find the index of "Handling"
+        System.out.println("7. Index of 'Handling': " + indexOfHandling);
+
+        // 8. Uppercase and Lowercase
+        String upperCaseString = inputString.toUpperCase();
+        String lowerCaseString = inputString.toLowerCase();
+        System.out.println("8. Uppercase: " + upperCaseString);
+        System.out.println("   Lowercase: " + lowerCaseString);
+
+        // 9. String Splitting
+        String[] words = inputString.split(" "); // Split by space
+        System.out.print("9. Split String: ");
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
+        System.out.println();
+
+        // 10. Trimming
+        String stringWithWhitespace = "   Trim Me   ";
+        String trimmedString = stringWithWhitespace.trim(); // Remove leading/trailing spaces
+        System.out.println("10. Trimmed String: '" + trimmedString + "'");
+    }
+}
